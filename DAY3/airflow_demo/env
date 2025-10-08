@@ -1,0 +1,5 @@
+airflow/
+  |-->logs/
+  |-->data/
+  |-->dags/
+      |<-- dagscript.py
