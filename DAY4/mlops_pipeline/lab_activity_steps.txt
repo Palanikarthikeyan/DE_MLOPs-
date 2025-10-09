@@ -1,0 +1,34 @@
+To run mlops_pipeline activity
+https://github.com/Palanikarthikeyan/DE_MLOPs-/tree/main/DAY4/mlops_pipeline
+
+1. Go to lab ->wsl 
+2. activate airflow environment
+student@paka:~$ source airflow-Demo/airflow_project/bin/activate
+(airflow_project) student@paka:~$
+3. install mlflow scikit-learn => pip install mlflow scikit-learn {Enter}
+|
+4. Go to ~/airflow/dags directory => cd ~/airflow/dags
+
+|
+5. Download all the 3 files in same ~/airflow/dags directory
+
+  ls ~/airflow/dags/{enter}
+  create_model.py
+  data_ingestion.py
+  mlops_pipeline.py
+
+6. vi create_model.py
+   vi data_ingestion.py
+
+   vi mlops_pipeline.py
+
+7. start webserver => airflow webserver --port 8080 
+
+8. open another ubuntu and activate env => airflow scheduler 
+|
+9. open airflow login => admin/admin => search ..
+
+
+10. open another  ubuntu and activate env =>mlflow ui {Enter}
+    |
+    127.0.0.1:5000
